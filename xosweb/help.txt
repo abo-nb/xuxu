@@ -1,0 +1,4 @@
+guishwo //顯示gui
+guihide //顯示隱藏gui
+helptoweb //打開網頁版幫助
+end //結束

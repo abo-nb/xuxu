@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>A</title>
+</head>
+<body>
+    <div>
+        A.htm
+        <input type="text" id="T1" size="20" />
+        <input type="button" value="送出↓" onclick="SendMsg()" />
+        <iframe src="b.htm" id="iframe" width="100%" height="100%"></iframe>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+function SendMsg()
+{
+    var ifrmae = document.getElementById('iframe');
+    ifrmae.contentDocument.getElementById("T1").value = document.getElementById("T1").value;
+}
+</script>
